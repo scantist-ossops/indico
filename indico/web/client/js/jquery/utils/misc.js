@@ -25,7 +25,7 @@ import Palette from '../../utils/palette';
 
   global.choiceConfirmPrompt = function choiceConfirmPrompt(message, title, choice1, choice2) {
     var dfd = $.Deferred();
-    message = $('<div>', {width: 400, html: message});
+    message = $('<div>', {width: 400, text: message});
     new SpecialRemovePopup(
       title || $T('Please confirm'),
       message,
